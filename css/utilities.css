@@ -29,14 +29,26 @@ strong {
 .pt-10{
 	padding-top: 10%;
 }
+
+.pt-25{
+	padding-top: 25%;
+}
 .pb-5{
 	padding-bottom: 5%;
 }
 .pl-5{
 	padding-left: 5%;
 }
+.pl-10{
+	padding-left: 10%;
+}
+
 .pr-5{
 	padding-right: 5%;
+}
+
+.pr-10{
+	padding-right: 10%;
 }
 .mg-0{
 	margin: 0;
@@ -85,6 +97,7 @@ strong {
 	color: #0dc0c0;
 }
 
+/*
 .a-none-decoration{
 	text-decoration: none;
 }
@@ -104,7 +117,7 @@ strong {
 	background-size: cover;
 	background-repeat: no-repeat;
 /*	background-position: center;*/
-}
+}*/
 
 .pull-left {
 	float: left;
@@ -113,21 +126,35 @@ strong {
 	float: right;
 }
 
+/**Text******/
+.titulo2{
+	font-size: 1.9rem;
+	font-weight: 400;
+}
 
+.texto{
+	font-size: 1.1rem;
+}
+.texto-gris{
+	color: #222222;
+}
+
+.texto-naranja{
+	color: #EF5029
+}
 
 /**Botones****/
-
-.buttongray {
+header .buttongray {
 	border: none;
 	background-color: #323A45;
 	color: #C6CED3;
 	font-weight: bold;
 }
-.buttongray:hover {
+header .buttongray:hover {
 	background-color: rgb(13, 192, 192);
 	color: white;
 }
-.buttontransp {
+header .buttontransp {
 	border: none;
 	background-color: rgba(191, 191, 191, 0.1);
 	color: white;
@@ -135,25 +162,58 @@ strong {
 	font-size: 1.7rem;
 	box-shadow: 0px 0px 1px rgba(191, 191, 191, 0.7);
 }
-.buttontransp:hover {
+header .buttontransp:hover {
 	background-color: rgb(13, 192, 192);
 }
-/*
-.buttonturquesa {
+
+
+
+/**/
+
+.trabajos .buttongray {
 	border: none;
-	background-color: #0dc0c0;
-	padding: 10px 20px;
-} */
-.buttonturquesa:hover {
-	
+	background-color: #323A45;
+	color: #C6CED3;
+	font-weight: bold;
 }
-.sombreado {
-	box-shadow: 0px 1px 3px #ccc;
+.trabajos .buttongray:hover {
+	background-color: rgb(13, 192, 192);
+	color: white;
 }
+.trabajos .buttontransp {
+	border: none;
+	background-color: rgba(191, 191, 191, 0.1);
+	color: white;
+	font-weight: 600;
+	font-size: 1.7rem;
+	box-shadow: 0px 0px 1px rgba(191, 191, 191, 0.7);
+}
+.trabajos .buttontransp:hover {
+	background-color: rgb(13, 192, 192);
+}
+
+
 /*arriba del main*/
-h2 {
-	
-}
+
+
 p {
 	font-size: 1.6rem;
+}
+
+@media screen and (max-width:480px){
+	.titulo{
+	font-size: 3rem !important;
+	}
+}
+
+
+/***Clearfix****************/
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
 }
